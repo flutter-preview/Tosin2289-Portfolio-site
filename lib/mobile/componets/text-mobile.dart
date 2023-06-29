@@ -7,7 +7,31 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: Column(
-        children: [Text("My name")],
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            "My name",
+            style: TextStyle(fontSize: 50, color: Colors.black),
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                  text: 'is',
+                  style: TextStyle(fontSize: 50, color: Colors.black)),
+              TextSpan(
+                text: ' Tosin',
+                style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple),
+              ),
+            ]),
+          ),
+          const Text(
+            "I am a mobile application developer and also a technical writer with  1 year of experience.",
+            style: TextStyle(fontSize: 16),
+          ),
+        ],
       ),
     );
   }

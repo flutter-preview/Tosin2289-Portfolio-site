@@ -18,8 +18,9 @@ class CustomAppBar extends StatelessWidget {
                 )),
             ShaderMask(
               shaderCallback: (bounds) => const LinearGradient(colors: [
-                Colors.black,
-                Colors.orange,
+                Colors.yellow,
+                Colors.purple,
+                Colors.blue,
               ]).createShader(
                 Rect.fromLTWH(0, 0, bounds.width, bounds.height),
               ),

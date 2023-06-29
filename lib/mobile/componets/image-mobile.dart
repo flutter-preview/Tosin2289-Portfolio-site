@@ -7,20 +7,16 @@ class CustomImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: 300,
       child: Stack(
         children: [
-          Positioned.fill(
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-              child: Image.asset(
-                "assets/Spline.png",
-                height: 350,
-              ),
-            ),
+          Image.asset(
+            "assets/Spline.png",
+            height: 350,
           ),
           Positioned(
-            top: 320,
-            left: 15,
+            top: 180,
+            right: 10,
             child: Container(
               height: 100,
               width: 180,

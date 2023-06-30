@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-class CustomImage extends StatelessWidget {
-  const CustomImage({Key? key}) : super(key: key);
+class CustomImageM extends StatelessWidget {
+  const CustomImageM({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

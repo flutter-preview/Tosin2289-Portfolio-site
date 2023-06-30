@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'componets/appbar-mobile.dart';
 import 'componets/hiremebtn-mobile.dart';
 import 'componets/image-mobile.dart';
+import 'componets/language-mobile.dart';
+import 'componets/projexttext-mobile.dart';
 import 'componets/text-mobile.dart';
 
 class MobileView extends StatelessWidget {
@@ -14,20 +16,30 @@ class MobileView extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              CustomAppBar(),
-              CustomImage(),
-              SizedBox(
-                height: 50,
-              ),
-              CustomText(),
-              SizedBox(
-                height: 30,
-              ),
-              HireMeBtnM()
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                CustomAppBarM(),
+                CustomImageM(),
+                SizedBox(
+                  height: 50,
+                ),
+                CustomTextM(),
+                SizedBox(
+                  height: 30,
+                ),
+                HireMeBtnM(),
+                SizedBox(
+                  height: 60,
+                ),
+                CustomLanguageM(),
+                SizedBox(
+                  height: 60,
+                ),
+                TextProjectM()
+              ],
+            ),
           ),
         ),
       ),

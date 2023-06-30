@@ -21,24 +21,29 @@ class TextProjectD extends StatelessWidget {
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
-                  height: 5,
-                ),
-                Text(
+              ],
+            ),
+            Row(
+              children: [
+                const Text(
                   "All Projects",
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
+               const  SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.black),
+                  child: const Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                  ),
+                ),
               ],
-            ),
-            Container(
-              height: 40,
-              width: 40,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.black),
-              child: const Icon(
-                Icons.settings,
-                color: Colors.white,
-              ),
             ),
           ],
         ),

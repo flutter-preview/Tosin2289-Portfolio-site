@@ -7,15 +7,10 @@ class CustomAppBarD extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.menu,
-                )),
             ShaderMask(
               shaderCallback: (bounds) => const LinearGradient(colors: [
                 Colors.yellow,
@@ -32,12 +27,38 @@ class CustomAppBarD extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            MaterialButton(
-              color: Colors.grey[300],
-              shape: const StadiumBorder(),
-              onPressed: () {},
-              child: const Text("Contact Me"),
-            )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "About me",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "Portfolio",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    "Co operation",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+                MaterialButton(
+                  color: Colors.grey[300],
+                  shape: const StadiumBorder(),
+                  onPressed: () {},
+                  child: const Text("Contact Me"),
+                )
+              ],
+            ),
           ],
         ),
       ),

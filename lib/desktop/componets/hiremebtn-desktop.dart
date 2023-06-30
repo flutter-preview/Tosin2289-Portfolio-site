@@ -7,7 +7,7 @@ class HireMeBtnD extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-      color: Colors.purple,
+      color: Colors.blue,
       shape: const StadiumBorder(),
       onPressed: () {},
       child: const Text(

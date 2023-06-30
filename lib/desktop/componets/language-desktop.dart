@@ -15,13 +15,13 @@ class CustomLanguageD extends StatelessWidget {
                 text: 'Dart',
                 color: Colors.blue.shade700,
                 length: 100,
-                icon: FontAwesomeIcons.drupal,
+                icon: "assets/dart.png",
               ),
               IndividualBox(
                 text: 'Python',
                 color: Colors.blue.shade900,
                 length: 130,
-                icon: FontAwesomeIcons.python,
+                icon: "assets/python.png",
               ),
             ],
           ),
@@ -34,13 +34,13 @@ class CustomLanguageD extends StatelessWidget {
                 text: 'Flutter',
                 color: Colors.blue,
                 length: 160,
-                icon: FontAwesomeIcons.futbol,
+                icon: "assets/flutter.png",
               ),
               IndividualBox(
                 text: 'Firebase',
                 color: Colors.yellow.shade800,
                 length: 160,
-                icon: FontAwesomeIcons.firefox,
+                icon: "assets/firebase.png",
               )
             ],
           ),
@@ -76,8 +76,9 @@ class IndividualBox extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
+              Image.asset(
                 icon,
+                height: 50,
                 color: Colors.white,
               ),
               const SizedBox(

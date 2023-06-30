@@ -13,33 +13,39 @@ class DesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                CustomAppBarD(),
-                CustomImageD(),
-                SizedBox(
-                  height: 50,
+      body: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: const [
+                    CustomAppBarD(),
+                  ],
                 ),
-                CustomTextD(),
-                SizedBox(
-                  height: 30,
-                ),
-                HireMeBtnD(),
-                SizedBox(
-                  height: 60,
-                ),
-                CustomLanguageD(),
-                SizedBox(
-                  height: 60,
-                ),
-                TextProjectD()
-              ],
-            ),
+              ),
+              const SizedBox(
+                height: 100,
+              ),
+              Row(
+                children: const [
+                  CustomTextD(),
+                  CustomImageD(),
+                ],
+              ),
+              const SizedBox(
+                height: 60,
+              ),
+              const CustomLanguageD(),
+              const SizedBox(
+                height: 60,
+              ),
+              const TextProjectD()
+            ],
           ),
         ),
       ),

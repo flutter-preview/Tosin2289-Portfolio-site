@@ -18,7 +18,7 @@ class TextProjectM extends StatelessWidget {
                   "Latest Projects",
                   style: TextStyle(
                       fontSize: 30,
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -26,7 +26,10 @@ class TextProjectM extends StatelessWidget {
                 ),
                 Text(
                   "All Projects",
-                  style: TextStyle(fontSize: 15, color: Colors.black),
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
                 ),
               ],
             ),

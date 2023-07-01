@@ -15,6 +15,7 @@ class CustomAppBarM extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.menu,
+                  color: Colors.white,
                 )),
             ShaderMask(
               shaderCallback: (bounds) => const LinearGradient(colors: [

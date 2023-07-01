@@ -16,7 +16,7 @@ class CustomTextD extends StatelessWidget {
             children: [
               const Text("My name is ", style: TextStyle(fontSize: 30)),
               SizedBox(
-                width: 250.0,
+                width: 300.0,
                 child: DefaultTextStyle(
                   style: const TextStyle(
                       fontSize: 30.0,

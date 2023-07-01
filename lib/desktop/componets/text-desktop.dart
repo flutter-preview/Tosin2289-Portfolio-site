@@ -14,17 +14,17 @@ class CustomTextD extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text("My name is ", style: TextStyle(fontSize: 28)),
+              const Text("My name is ", style: TextStyle(fontSize: 30)),
               SizedBox(
                 width: 250.0,
                 child: DefaultTextStyle(
                   style: const TextStyle(
-                      fontSize: 28.0,
+                      fontSize: 30.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.blue),
                   child: AnimatedTextKit(
                     repeatForever: true,
-                    pause: const Duration(milliseconds: 5000),
+                    pause: const Duration(milliseconds: 3000),
                     animatedTexts: [
                       TyperAnimatedText(
                         'Tosin Ayoola',
@@ -41,11 +41,11 @@ class CustomTextD extends StatelessWidget {
             children: <Widget>[
               const Text(
                 'I am a ',
-                style: TextStyle(fontSize: 30.0),
+                style: TextStyle(fontSize: 33.0),
               ),
               DefaultTextStyle(
                 style: const TextStyle(
-                    fontSize: 33.0,
+                    fontSize: 35.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.blue),
                 child: AnimatedTextKit(

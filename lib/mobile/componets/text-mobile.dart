@@ -12,12 +12,12 @@ class CustomTextM extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Text("My name is ", style: TextStyle(fontSize: 28)),
+            const Text("My name is ", style: TextStyle(fontSize: 26)),
             SizedBox(
               width: 200.0,
               child: DefaultTextStyle(
                 style: const TextStyle(
-                    fontSize: 28.0,
+                    fontSize: 26.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.purple),
                 child: AnimatedTextKit(
@@ -37,11 +37,11 @@ class CustomTextM extends StatelessWidget {
         Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
           const Text(
             'I am a ',
-            style: TextStyle(fontSize: 30.0),
+            style: TextStyle(fontSize: 28.0),
           ),
           DefaultTextStyle(
             style: const TextStyle(
-                fontSize: 30.0,
+                fontSize: 28.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.purple),
             child: AnimatedTextKit(

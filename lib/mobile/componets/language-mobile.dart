@@ -15,14 +15,13 @@ class CustomLanguageM extends StatelessWidget {
                 text: 'Dart',
                 color: Colors.blue.shade700,
                 length: 100,
-                icon: FontAwesomeIcons.drupal,
+                icon: "assets/dart.png",
               ),
               IndividualBox(
-                text: 'Python',
-                color: Colors.blue.shade900,
-                length: 130,
-                icon: FontAwesomeIcons.python,
-              ),
+                  text: 'Python',
+                  color: Colors.blue.shade900,
+                  length: 130,
+                  icon: "assets/pythons.png"),
             ],
           ),
           const SizedBox(
@@ -33,14 +32,14 @@ class CustomLanguageM extends StatelessWidget {
               const IndividualBox(
                 text: 'Flutter',
                 color: Colors.blue,
-                length: 160,
-                icon: FontAwesomeIcons.futbol,
+                length: 140,
+                icon: "assets/flutter.png",
               ),
               IndividualBox(
                 text: 'Firebase',
                 color: Colors.yellow.shade800,
-                length: 160,
-                icon: FontAwesomeIcons.firefox,
+                length: 140,
+                icon: "assets/firebase.png",
               )
             ],
           ),
@@ -68,7 +67,7 @@ class IndividualBox extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Container(
-        height: 60,
+        height: 50,
         width: length,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10), color: color),
@@ -76,12 +75,9 @@ class IndividualBox extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
+              Image.asset(
                 icon,
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 10,
+                height: 30,
               ),
               Text(
                 text,

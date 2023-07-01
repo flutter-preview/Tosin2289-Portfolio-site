@@ -21,7 +21,7 @@ class CustomLanguageD extends StatelessWidget {
                 text: 'Python',
                 color: Colors.blue.shade900,
                 length: 130,
-                icon: "assets/python.png",
+                icon: "assets/pythons.png",
               ),
             ],
           ),
@@ -78,8 +78,7 @@ class IndividualBox extends StatelessWidget {
             children: [
               Image.asset(
                 icon,
-                height: 50,
-                color: Colors.white,
+                height: 30,
               ),
               const SizedBox(
                 width: 10,

@@ -5,6 +5,7 @@ import 'componets/hiremebtn-desktop.dart';
 import 'componets/image-desktop.dart';
 import 'componets/language-desktop.dart';
 import 'componets/projecttext-desktop.dart';
+import 'componets/socials-desktop.dart';
 import 'componets/text-desktop.dart';
 
 class DesktopView extends StatelessWidget {
@@ -38,7 +39,11 @@ class DesktopView extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 60,
+                height: 50,
+              ),
+              const SocialsD(),
+              const SizedBox(
+                height: 30,
               ),
               const CustomLanguageD(),
               const SizedBox(

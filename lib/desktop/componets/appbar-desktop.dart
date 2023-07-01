@@ -34,28 +34,33 @@ class CustomAppBarD extends StatelessWidget {
                   onPressed: () {},
                   child: const Text(
                     "About me",
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
                 TextButton(
                   onPressed: () {},
                   child: const Text(
-                    "Portfolio",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Co operation",
-                    style: TextStyle(color: Colors.black),
+                    "CV",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
                 MaterialButton(
                   color: Colors.grey[300],
                   shape: const StadiumBorder(),
                   onPressed: () {},
-                  child: const Text("Contact Me"),
+                  child: const Text(
+                    "Contact Me",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
                 )
               ],
             ),

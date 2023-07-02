@@ -26,7 +26,7 @@ class _SocialsDState extends State<SocialsD> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 350,
+      width: 450,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -34,32 +34,37 @@ class _SocialsDState extends State<SocialsD> {
             onPressed: () {
               launchUrl(Uri.parse('https://github.com/Tosin2289'));
             },
-            icon: const Icon(FontAwesomeIcons.github, size: 40),
+            icon: const Icon(FontAwesomeIcons.github,
+                size: 40, color: Colors.white),
           ),
           IconButton(
             onPressed: () {
               launchUrl(Uri.parse('https://twitter.com/baddestkid18'));
             },
-            icon: const Icon(FontAwesomeIcons.twitter, size: 40),
+            icon: const Icon(FontAwesomeIcons.twitter,
+                size: 40, color: Colors.white),
           ),
           IconButton(
             onPressed: () {
               launchUrl(Uri.parse('https://www.instagram.com/baddestkid24/'));
             },
-            icon: const Icon(FontAwesomeIcons.instagram, size: 40),
+            icon: const Icon(FontAwesomeIcons.instagram,
+                size: 40, color: Colors.white),
           ),
           IconButton(
             onPressed: () {
               launchUrl(Uri.parse('https://medium.com/@Code-blast'));
             },
-            icon: const Icon(FontAwesomeIcons.medium, size: 40),
+            icon: const Icon(FontAwesomeIcons.medium,
+                size: 40, color: Colors.white),
           ),
           IconButton(
             onPressed: () {
               launchUrl(Uri.parse(
                   'https://www.linkedin.com/in/ayoola-tosin-b401a0211/'));
             },
-            icon: const Icon(FontAwesomeIcons.linkedin, size: 40),
+            icon: const Icon(FontAwesomeIcons.linkedin,
+                size: 40, color: Colors.white),
           ),
         ],
       ),

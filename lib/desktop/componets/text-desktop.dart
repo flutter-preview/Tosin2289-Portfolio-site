@@ -14,12 +14,13 @@ class CustomTextD extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text("My name is ", style: TextStyle(fontSize: 30)),
+              const Text("My name is ",
+                  style: TextStyle(fontSize: 40, color: Colors.white)),
               SizedBox(
                 width: 300.0,
                 child: DefaultTextStyle(
                   style: const TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 40.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.blue),
                   child: AnimatedTextKit(
@@ -41,11 +42,11 @@ class CustomTextD extends StatelessWidget {
             children: <Widget>[
               const Text(
                 'I am a ',
-                style: TextStyle(fontSize: 33.0),
+                style: TextStyle(fontSize: 43.0, color: Colors.white),
               ),
               DefaultTextStyle(
                 style: const TextStyle(
-                    fontSize: 35.0,
+                    fontSize: 45.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.blue),
                 child: AnimatedTextKit(
@@ -67,7 +68,7 @@ class CustomTextD extends StatelessWidget {
           ),
           const Text(
             "I am a mobile application developer and also a \n technical writer with  1 year of experience.",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, color: Colors.white),
           ),
           const SizedBox(
             height: 30,

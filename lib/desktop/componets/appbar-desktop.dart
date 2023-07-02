@@ -22,21 +22,21 @@ class CustomAppBarD extends StatelessWidget {
               child: const Text(
                 "PHENOMES",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 40,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton(
                   onPressed: () {},
                   child: const Text(
                     "About me",
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
+                      color: Colors.white,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -45,8 +45,8 @@ class CustomAppBarD extends StatelessWidget {
                   child: const Text(
                     "CV",
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
+                      color: Colors.white,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -58,7 +58,7 @@ class CustomAppBarD extends StatelessWidget {
                     "Contact Me",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 20,
+                        fontSize: 25,
                         fontWeight: FontWeight.bold),
                   ),
                 )

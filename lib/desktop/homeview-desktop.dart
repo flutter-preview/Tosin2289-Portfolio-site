@@ -14,6 +14,7 @@ class DesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: SingleChildScrollView(
@@ -33,6 +34,7 @@ class DesktopView extends StatelessWidget {
                 height: 100,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: const [
                   CustomTextD(),
                   CustomImageD(),

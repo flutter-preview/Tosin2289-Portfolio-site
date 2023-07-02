@@ -18,7 +18,7 @@ class TextProjectD extends StatelessWidget {
                   "Latest Projects",
                   style: TextStyle(
                       fontSize: 30,
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
               ],
@@ -27,9 +27,12 @@ class TextProjectD extends StatelessWidget {
               children: [
                 const Text(
                   "All Projects",
-                  style: TextStyle(fontSize: 15, color: Colors.black),
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
                 ),
-               const  SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Container(

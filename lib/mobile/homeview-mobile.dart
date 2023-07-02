@@ -175,28 +175,33 @@ class _MobileViewState extends State<MobileView> {
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                CustomImageM(),
-                SizedBox(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    CustomImageM(),
+                  ],
+                ),
+                const SizedBox(
                   height: 50,
                 ),
-                CustomTextM(),
-                SizedBox(
+                const CustomTextM(),
+                const SizedBox(
                   height: 30,
                 ),
-                HireMeBtnM(),
-                SizedBox(
+                const HireMeBtnM(),
+                const SizedBox(
                   height: 50,
                 ),
-                SocialsM(),
-                SizedBox(
+                const SocialsM(),
+                const SizedBox(
                   height: 30,
                 ),
-                CustomLanguageM(),
-                SizedBox(
+                const CustomLanguageM(),
+                const SizedBox(
                   height: 60,
                 ),
-                TextProjectM()
+                const TextProjectM()
               ],
             ),
           ),

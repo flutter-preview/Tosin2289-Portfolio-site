@@ -12,7 +12,7 @@ class CustomImageD extends StatelessWidget {
         children: [
           Image.asset(
             "assets/Spline.png",
-            height: 230,
+            height: 330,
           ),
           Positioned(
             top: 180,

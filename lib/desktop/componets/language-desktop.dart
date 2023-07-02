@@ -9,20 +9,20 @@ class CustomLanguageD extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            width: 300,
+            width: 350,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IndividualBox(
                   text: 'Dart',
                   color: Colors.blue.shade700,
-                  length: 110,
+                  length: 160,
                   icon: "assets/dart.png",
                 ),
                 IndividualBox(
                   text: 'Python',
                   color: Colors.blue.shade900,
-                  length: 130,
+                  length: 160,
                   icon: "assets/pythons.png",
                 ),
               ],

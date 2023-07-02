@@ -26,7 +26,10 @@ class DesktopView extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const [
-                    CustomAppBarD(),
+                    Padding(
+                      padding: EdgeInsets.all(24.0),
+                      child: CustomAppBarD(),
+                    ),
                   ],
                 ),
               ),
@@ -35,23 +38,33 @@ class DesktopView extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
+                children: [
                   CustomTextD(),
+                  Container(),
                   CustomImageD(),
                 ],
               ),
               const SizedBox(
                 height: 50,
               ),
-              const SocialsD(),
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: const SocialsD(),
+              ),
               const SizedBox(
                 height: 30,
               ),
-              const CustomLanguageD(),
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: const CustomLanguageD(),
+              ),
               const SizedBox(
                 height: 60,
               ),
-              const TextProjectD()
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: const TextProjectD(),
+              )
             ],
           ),
         ),
